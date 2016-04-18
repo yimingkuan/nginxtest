@@ -1,11 +1,11 @@
 # Pull base image.
-FROM alpine
+FROM nginx:stable-alpine
 
 # Install Nginx.
-RUN apk --no-cache add nginx
+#RUN apk --no-cache add nginx
 
 # Expose ports.
-EXPOSE 80
-EXPOSE 443
+#EXPOSE 80
+#EXPOSE 443
 
-CMD ["nginx", "-g", "daemon off;"]
+#CMD ["nginx", "-g", "daemon off;"]
